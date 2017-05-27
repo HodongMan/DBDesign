@@ -18,8 +18,11 @@ class Itemstock extends Migration
             $table->integer("hqstock");
             $table->integer("stock");
 
+            $table->integer('item_id')->unsigned();
+            $table->timestamps();
+            
             $table->foreign('item_id')->references('id')->on('ITEMS');
-            $table->timestamp();
+
         });
     }
 

@@ -14,12 +14,13 @@ class Person extends Migration
     public function up()
     {
         Schema::create("PERSONS", function(Blueprint $table){
-            $table->increments("id");
-            $table->boolean("isAdmin");
-            $table->string('email')->unique();
+
+            $table->string('email', 100)->primary();
             $table->string('name');
             $table->string('password');
-            $table->timestamp();
+            $table->boolean("isAdmin");
+
+            $table->timestamps();
         });
     }
 

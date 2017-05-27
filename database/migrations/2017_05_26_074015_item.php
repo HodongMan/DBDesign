@@ -16,7 +16,7 @@ class Item extends Migration
         Schema::create("ITEMS", function(Blueprint $table){
             $table->increments("id");
             $table->string("type");
-            $table->timestamp();
+            $table->timestamps();
         });
     }
 

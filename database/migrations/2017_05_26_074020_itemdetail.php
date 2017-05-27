@@ -20,8 +20,11 @@ class Itemdetail extends Migration
             $table->string("image");
             $table->integer("price");
 
+            $table->integer('item_id')->unsigned();
+            $table->timestamps();
+            
             $table->foreign('item_id')->references('id')->on('ITEMS');
-            $table->timestamp();
+
         });
     }
 

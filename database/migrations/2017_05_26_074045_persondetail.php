@@ -16,14 +16,17 @@ class Persondetail extends Migration
         Schema::create("PERSONDETAILS", function(Blueprint $table){
             $table->increments("id");
             $table->string("content");
-            $table->boolean("hired")
+            $table->boolean("hired");
             $table->string("phone");
             $table->date("date");
             $table->integer("salary");
             $table->string("account");
 
+            $table->string('person_email', 100);
+            $table->timestamps();
+
             $table->foreign('person_email')->references('email')->on('PERSONS');
-            $table->timestamp();
+
         });
     }
 

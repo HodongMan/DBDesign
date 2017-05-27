@@ -19,8 +19,10 @@ class Orderdetail extends Migration
             $table->integer('count');
             $table->text('content');
 
-            $table->foreign('order_id')->references('id')->on('ORDERS');
+            $table->integer('order_id')->unsigned();
             $table->timestamps();
+
+            $table->foreign('order_id')->references('id')->on('ORDERS');
         });
     }
 

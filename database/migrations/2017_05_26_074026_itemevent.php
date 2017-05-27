@@ -13,7 +13,7 @@ class Itemevent extends Migration
      */
     public function up()
     {
-        Schema::create("ITEMDETAILS", function(Blueprint $table){
+        Schema::create("ITEMEVENTS", function(Blueprint $table){
             $table->increments("id");
             $table->integer("sale");
             $table->string("freeset");
@@ -21,8 +21,11 @@ class Itemevent extends Migration
             $table->string("gift");
             $table->string("validity");
 
+            $table->integer('item_id')->unsigned();
+            $table->timestamps();
+
             $table->foreign('item_id')->references('id')->on('ITEMS');
-            $table->timestamp();
+
         });
     }
 
