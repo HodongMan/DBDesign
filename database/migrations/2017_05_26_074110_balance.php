@@ -14,7 +14,7 @@ class Balance extends Migration
     public function up()
     {
         Schema::create('BALANCES', function (Blueprint $table) {
-            $table->increments('id')->unique();
+            $table->increments('id');
             $table->string('type');
             $table->integer('money');
             $table->timestamps();

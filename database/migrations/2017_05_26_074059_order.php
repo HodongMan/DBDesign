@@ -14,10 +14,13 @@ class Order extends Migration
     public function up()
     {
         Schema::create('ORDERS', function (Blueprint $table) {
-            $table->increments('id')->unique();
+            $table->increments('id');
             $table->string('type');
             $table->string('status');
             $table->timestamps();
+
+            $table->foreign('person_email')->references('email')->on('PERSONS');
+            $table->foreign('item_id')->references('id')->on('ITEMS');
         });
     }
 

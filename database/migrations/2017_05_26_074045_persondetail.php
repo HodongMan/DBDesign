@@ -14,14 +14,15 @@ class Persondetail extends Migration
     public function up()
     {
         Schema::create("PERSONDETAILS", function(Blueprint $table){
-            $table->increments("id")->unique();
-            $table->string("name");
+            $table->increments("id");
             $table->string("content");
             $table->boolean("hired")
             $table->string("phone");
-            $table->date("date")
+            $table->date("date");
             $table->integer("salary");
             $table->string("account");
+
+            $table->foreign('person_email')->references('email')->on('PERSONS');
             $table->timestamp();
         });
     }

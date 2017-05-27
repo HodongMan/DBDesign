@@ -14,11 +14,13 @@ class Itemdetail extends Migration
     public function up()
     {
         Schema::create("ITEMDETAILS", function(Blueprint $table){
-            $table->increments("id")->unique();
+            $table->increments("id");
             $table->string("name");
             $table->text("content");
             $table->string("image");
             $table->integer("price");
+
+            $table->foreign('item_id')->references('id')->on('ITEMS');
             $table->timestamp();
         });
     }

@@ -17,6 +17,7 @@ class Person extends Migration
             $table->increments("id");
             $table->boolean("isAdmin");
             $table->string('email')->unique();
+            $table->string('name');
             $table->string('password');
             $table->timestamp();
         });

@@ -14,9 +14,11 @@ class Itemstock extends Migration
     public function up()
     {
         Schema::create("ITEMSTOCKS", function(Blueprint $table){
-            $table->increments("id")->unique();
+            $table->increments("id");
             $table->integer("hqstock");
             $table->integer("stock");
+
+            $table->foreign('item_id')->references('id')->on('ITEMS');
             $table->timestamp();
         });
     }

@@ -14,10 +14,12 @@ class Orderdetail extends Migration
     public function up()
     {
         Schema::create('ORDERDETAILS', function (Blueprint $table) {
-            $table->increments('id')->unique();
+            $table->increments('id');
             $table->datetime('date');
             $table->integer('count');
             $table->text('content');
+
+            $table->foreign('order_id')->references('id')->on('ORDERS');
             $table->timestamps();
         });
     }

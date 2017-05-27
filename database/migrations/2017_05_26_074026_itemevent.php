@@ -14,12 +14,14 @@ class Itemevent extends Migration
     public function up()
     {
         Schema::create("ITEMDETAILS", function(Blueprint $table){
-            $table->increments("id")->unique();
+            $table->increments("id");
             $table->integer("sale");
             $table->string("freeset");
             $table->string("hold");
             $table->string("gift");
             $table->string("validity");
+
+            $table->foreign('item_id')->references('id')->on('ITEMS');
             $table->timestamp();
         });
     }
