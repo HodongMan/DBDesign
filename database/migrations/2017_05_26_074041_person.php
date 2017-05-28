@@ -15,6 +15,7 @@ class Person extends Migration
     {
         Schema::create("PERSONS", function(Blueprint $table){
 
+            $table->increments('id');
             $table->string('email', 100)->primary();
             $table->string('name');
             $table->string('password');

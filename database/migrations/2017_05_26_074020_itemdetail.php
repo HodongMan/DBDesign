@@ -22,7 +22,7 @@ class Itemdetail extends Migration
 
             $table->integer('item_id')->unsigned();
             $table->timestamps();
-            
+
             $table->foreign('item_id')->references('id')->on('ITEMS');
 
         });
