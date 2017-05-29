@@ -13,9 +13,8 @@ class Person extends Migration
      */
     public function up()
     {
-        Schema::create("PERSONS", function(Blueprint $table){
+        Schema::create("persons", function(Blueprint $table){
 
-            $table->increments('id');
             $table->string('email', 100)->primary();
             $table->string('name');
             $table->string('password');
@@ -32,6 +31,6 @@ class Person extends Migration
      */
     public function down()
     {
-        Schema::drop("PERSONS");
+        Schema::drop("persons");
     }
 }

@@ -13,7 +13,7 @@ class Itemevent extends Migration
      */
     public function up()
     {
-        Schema::create("ITEMEVENTS", function(Blueprint $table){
+        Schema::create("itemevents", function(Blueprint $table){
             $table->increments("id");
             $table->integer("sale");
             $table->string("freeset");
@@ -24,7 +24,7 @@ class Itemevent extends Migration
             $table->integer('item_id')->unsigned();
             $table->timestamps();
 
-            $table->foreign('item_id')->references('id')->on('ITEMS');
+            $table->foreign('item_id')->references('id')->on('items');
 
         });
     }
@@ -36,6 +36,6 @@ class Itemevent extends Migration
      */
     public function down()
     {
-        Schema::drop("ITEMEVENTS");
+        Schema::drop("itemevents");
     }
 }

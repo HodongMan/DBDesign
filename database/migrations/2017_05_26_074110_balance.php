@@ -13,7 +13,7 @@ class Balance extends Migration
      */
     public function up()
     {
-        Schema::create('BALANCES', function (Blueprint $table) {
+        Schema::create('balances', function (Blueprint $table) {
             $table->increments('id');
             $table->string('type');
             $table->integer('money');
@@ -28,6 +28,6 @@ class Balance extends Migration
      */
     public function down()
     {
-        Schema::drop("BALANCES");
+        Schema::drop("balances");
     }
 }

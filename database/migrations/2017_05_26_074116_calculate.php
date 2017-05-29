@@ -13,7 +13,7 @@ class Calculate extends Migration
      */
     public function up()
     {
-        Schema::create('CALCULATES', function (Blueprint $table) {
+        Schema::create('calculates', function (Blueprint $table) {
             $table->increments('id');
             $table->text('content');
             $table->timestamps();
@@ -27,6 +27,6 @@ class Calculate extends Migration
      */
     public function down()
     {
-        Schema::drop("CALCULATES");
+        Schema::drop("calculates");
     }
 }

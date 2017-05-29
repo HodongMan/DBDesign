@@ -13,7 +13,7 @@ class Item extends Migration
      */
     public function up()
     {
-        Schema::create("ITEMS", function(Blueprint $table){
+        Schema::create("items", function(Blueprint $table){
             $table->increments("id");
             $table->string("type");
             $table->timestamps();
@@ -27,6 +27,6 @@ class Item extends Migration
      */
     public function down()
     {
-        Schema::drop("ITEMS");
+        Schema::drop("items");
     }
 }

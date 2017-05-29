@@ -13,6 +13,11 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+
+
+/*
+Route::get("/api/balance", 'balanceController@show');
+
+Route::put("/api/balance", 'balanceController@update');
+Route::delete("/api/balance", 'balanceController@destroy');
+*/

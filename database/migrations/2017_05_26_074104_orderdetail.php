@@ -13,7 +13,7 @@ class Orderdetail extends Migration
      */
     public function up()
     {
-        Schema::create('ORDERDETAILS', function (Blueprint $table) {
+        Schema::create('orderdetails', function (Blueprint $table) {
             $table->increments('id');
             $table->datetime('date');
             $table->integer('count');
@@ -22,7 +22,7 @@ class Orderdetail extends Migration
             $table->integer('order_id')->unsigned();
             $table->timestamps();
 
-            $table->foreign('order_id')->references('id')->on('ORDERS');
+            $table->foreign('order_id')->references('id')->on('orders');
         });
     }
 
@@ -33,6 +33,6 @@ class Orderdetail extends Migration
      */
     public function down()
     {
-        Schema::drop("ORDERDETAILS");
+        Schema::drop("orderdetails");
     }
 }

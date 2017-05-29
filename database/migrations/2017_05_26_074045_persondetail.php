@@ -13,7 +13,7 @@ class Persondetail extends Migration
      */
     public function up()
     {
-        Schema::create("PERSONDETAILS", function(Blueprint $table){
+        Schema::create("persondetails", function(Blueprint $table){
             $table->increments("id");
             $table->string("content");
             $table->boolean("hired");
@@ -25,7 +25,7 @@ class Persondetail extends Migration
             $table->string('person_email', 100);
             $table->timestamps();
 
-            $table->foreign('person_email')->references('email')->on('PERSONS');
+            $table->foreign('person_email')->references('email')->on('persons');
 
         });
     }
@@ -37,6 +37,6 @@ class Persondetail extends Migration
      */
     public function down()
     {
-        Schema::drop("PERSONDETAILS");
+        Schema::drop("persondetails");
     }
 }

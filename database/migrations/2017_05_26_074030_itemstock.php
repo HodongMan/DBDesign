@@ -13,15 +13,15 @@ class Itemstock extends Migration
      */
     public function up()
     {
-        Schema::create("ITEMSTOCKS", function(Blueprint $table){
+        Schema::create("itemstocks", function(Blueprint $table){
             $table->increments("id");
             $table->integer("hqstock");
             $table->integer("stock");
 
             $table->integer('item_id')->unsigned();
             $table->timestamps();
-            
-            $table->foreign('item_id')->references('id')->on('ITEMS');
+
+            $table->foreign('item_id')->references('id')->on('items');
 
         });
     }
@@ -33,6 +33,6 @@ class Itemstock extends Migration
      */
     public function down()
     {
-        Schema::drop("ITEMSTOCKS");
+        Schema::drop("itemstocks");
     }
 }

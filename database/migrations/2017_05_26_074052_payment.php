@@ -13,7 +13,7 @@ class Payment extends Migration
      */
     public function up()
     {
-        Schema::create("PAYMENTS", function(Blueprint $table){
+        Schema::create("payments", function(Blueprint $table){
             $table->increments("id");
             $table->integer("price");
             $table->text("content");
@@ -24,7 +24,7 @@ class Payment extends Migration
             $table->string('person_email', 100);
             $table->timestamps();
 
-            $table->foreign('person_email')->references('email')->on('PERSONS');
+            $table->foreign('person_email')->references('email')->on('persons');
         });
     }
 
@@ -35,6 +35,6 @@ class Payment extends Migration
      */
     public function down()
     {
-        Schema::drop("PAYMENTS");
+        Schema::drop("payments");
     }
 }

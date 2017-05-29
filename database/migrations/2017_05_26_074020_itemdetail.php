@@ -13,7 +13,7 @@ class Itemdetail extends Migration
      */
     public function up()
     {
-        Schema::create("ITEMDETAILS", function(Blueprint $table){
+        Schema::create("itemdetails", function(Blueprint $table){
             $table->increments("id");
             $table->string("name");
             $table->text("content");
@@ -23,7 +23,7 @@ class Itemdetail extends Migration
             $table->integer('item_id')->unsigned();
             $table->timestamps();
 
-            $table->foreign('item_id')->references('id')->on('ITEMS');
+            $table->foreign('item_id')->references('id')->on('items');
 
         });
     }
@@ -35,6 +35,6 @@ class Itemdetail extends Migration
      */
     public function down()
     {
-        Schema::drop("ITEMDETAILS");
+        Schema::drop("itemdetails");
     }
 }

@@ -13,7 +13,7 @@ class Order extends Migration
      */
     public function up()
     {
-        Schema::create('ORDERS', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
             $table->string('type');
             $table->string('status');
@@ -22,8 +22,8 @@ class Order extends Migration
             $table->string('person_email', 100);
             $table->timestamps();
 
-            $table->foreign('person_email')->references('email')->on('PERSONS');
-            $table->foreign('item_id')->references('id')->on('ITEMS');
+            $table->foreign('person_email')->references('email')->on('persons');
+            $table->foreign('item_id')->references('id')->on('items');
         });
     }
 
@@ -34,6 +34,6 @@ class Order extends Migration
      */
     public function down()
     {
-        Schema::drop("ORDERS");
+        Schema::drop("orders");
     }
 }

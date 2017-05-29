@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/api/balance', 'balanceController@index');
+Route::post('/api/balance', 'balanceController@create');
