@@ -17,7 +17,7 @@ class Itemdetail extends Migration
             $table->increments("id");
             $table->string("name");
             $table->text("content");
-            $table->string("image");
+            $table->string("image")->nullable();
             $table->integer("price");
 
             $table->integer('item_id')->unsigned();

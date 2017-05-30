@@ -15,11 +15,11 @@ class Itemevent extends Migration
     {
         Schema::create("itemevents", function(Blueprint $table){
             $table->increments("id");
-            $table->integer("sale");
-            $table->string("freeset");
-            $table->string("hold");
-            $table->string("gift");
-            $table->string("validity");
+            $table->integer("sale")->nullable();
+            $table->string("freeset")->nullable();
+            $table->string("hold")->nullable();
+            $table->string("gift")->nullable();
+            $table->string("validity")->nullable();
 
             $table->integer('item_id')->unsigned();
             $table->timestamps();
