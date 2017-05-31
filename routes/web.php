@@ -36,25 +36,25 @@ Route::get('/api/itemevent', 'itemeventController@index');
 Route::post('/api/itemevent', 'itemeventController@create');
 
 /* ITEMSTOCK */
-Route::get('/api/itemstock', 'itemeventController@index');
-Route::post('/api/itemstock', 'itemeventController@create');
+Route::get('/api/itemstock', 'itemstockController@index');
+Route::post('/api/itemstock', 'itemstockController@create');
 
 /* ORDER */
-Route::get('/api/order', 'itemeventController@index');
-Route::post('/api/order', 'itemeventController@create');
+Route::get('/api/order', 'orderController@index');
+Route::post('/api/order', 'orderController@create');
 
 /* ORDERDETAIL */
-Route::get('/api/orderdetail', 'itemeventController@index');
-Route::post('/api/orderdetail', 'itemeventController@create');
+Route::get('/api/orderdetail', 'orderdetailController@index');
+Route::post('/api/orderdetail', 'orderdetailController@create');
 
 /* PAYMEnT */
-Route::get('/api/payment', 'itemeventController@index');
-Route::post('/api/payment', 'itemeventController@create');
+Route::get('/api/payment', 'paymentController@index');
+Route::post('/api/payment', 'paymentController@create');
 
 /* PERSON */
-Route::get('/api/person', 'itemeventController@index');
-Route::post('/api/person', 'itemeventController@create');
+Route::get('/api/person', 'personController@index');
+Route::post('/api/person', 'personController@create');
 
 /* PERSONDETAIL */
-Route::get('/api/persondetail', 'itemeventController@index');
-Route::post('/api/persondetail', 'itemeventController@create');
+Route::get('/api/persondetail', 'persondetailController@index');
+Route::post('/api/persondetail', 'persondetailController@create');

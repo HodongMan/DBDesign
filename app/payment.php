@@ -8,7 +8,7 @@ class payment extends Model
 {
     protected $fillable = ['price', 'content', 'payment', 'chance', 'date', 'person_email'];
 
-    public funciton person()
+    public function person()
     {
         return $this->belongsTo(person::class);
     }

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class order extends Model
 {
+    protected $table = 'orders';
     protected $fillable = ['type', 'status', 'item_id', 'person_email'];
 
     public function item()
@@ -13,9 +14,9 @@ class order extends Model
         return $this->belongsTo(item::class);
     }
 
-    public function user()
+    public function person()
     {
-        return $this->belongsTo(item::class);
+        return $this->belongsTo(person::class);
     }
 
     public function orderdetail()

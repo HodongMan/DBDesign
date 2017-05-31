@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class person extends Model
 {
+    protected $table = 'persons';
     protected $fillable = ['email', 'name', 'password', 'isAdmin'];
 
     public function order()
@@ -22,7 +23,5 @@ class person extends Model
     {
         return $this->hasMany(payment::class);
     }
-
-
 
 }

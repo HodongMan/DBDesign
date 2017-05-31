@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class itemevent extends Model
 {
+    protected $table = 'itemevents';
     protected $fillable = ['sale', 'freeset', 'hold', 'gift', 'validity', 'item_id'];
 
     public function item()
