@@ -30,7 +30,7 @@ class ItemAD extends Component{
                             <span className="glyphicon glyphicon-chevron-left"></span>
                         </a>
                         <a className="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span clasNames="glyphicon glyphicon-chevron-right"></span>
+                            <span className="glyphicon glyphicon-chevron-right"></span>
                         </a>
                     </div>
                 </div>
