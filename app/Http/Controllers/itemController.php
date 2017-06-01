@@ -14,6 +14,19 @@ class itemController extends Controller
         return response()->json($item);
     }
 
+    public function indexJoinDetail()
+    {
+        $item = item::leftjoin("itemdetails", "items.id", "=", "itemdetails.item_id")
+        ->leftjoin("itemstocks", "items.id", "=", "itemstocks.item_id")->get();
+
+        return response()->json($item);
+    }
+
+    public function indexJoinToMany()
+    {
+        
+    }
+
     public function create(Request $request)
     {
         $this->validate($request, [

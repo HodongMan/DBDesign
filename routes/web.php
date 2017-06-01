@@ -25,7 +25,9 @@ Route::post('/api/calculate', 'calculateController@create');
 
 /* ITEM */
 Route::get('/api/item', 'itemController@index');
+Route::get('/api/item/itemdetail', 'itemController@indexJoinDetail');
 Route::post('/api/item', 'itemController@create');
+
 
 /* ITEMDETAIL */
 Route::get('/api/itemdetail', 'itemdetailController@index');
