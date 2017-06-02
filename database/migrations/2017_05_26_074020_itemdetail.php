@@ -17,7 +17,7 @@ class Itemdetail extends Migration
             $table->increments("id");
             $table->string("name");
             $table->text("content");
-            $table->string("image")->nullable();
+            $table->string("image")->default("http://placehold.it/320x150");
             $table->integer("price");
 
             $table->integer('item_id')->unsigned();

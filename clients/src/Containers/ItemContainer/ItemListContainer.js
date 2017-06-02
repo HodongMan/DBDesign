@@ -4,20 +4,36 @@ import {getItemList} from '../../lib/itemToServer';
 
 class ItemListContainer extends Component{
 
-    constructor(props){
-        super(props);
-        console.log(getItemList());
+    constructor(){
+        super();
+        this.state = {
+            itemList : [],
+        };
+    }
+
+    componentDidMount(){
+        getItemList()
+        .then((result) => {
+            this.setState({itemList : result.data});
+            console.log(this.state.itemList[0].id);
+        })
+        .catch((error) => console.log(error));
     }
 
     render(){
         return(
             <div className='row'>
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
+                {this.state.itemList.map((item) => {
+                    return(<Item
+                            key={item.id}
+                            name={item.name}
+                            image={item.image}
+                            price={item.price}
+                            content={item.content}
+                            stock={item.stock}
+                        />
+                    );
+                })}
             </div>
         );
     }

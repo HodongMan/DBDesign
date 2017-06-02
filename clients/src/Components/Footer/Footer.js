@@ -10,7 +10,7 @@ class Footer extends Component{
                 <footer>
                     <div className='row'>
                         <div className='col-lg-12'>
-                            <p>Copyright $copy; 데이터베이스 설계 3팀</p>
+                            <p>Copyright &copy; MIT License 데이터베이스 설계 3팀</p>
                         </div>
                     </div>
                 </footer>

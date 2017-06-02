@@ -1,8 +1,8 @@
 import axios from 'axios';
 
+const kUrl = 'http://localhost:8000';
+
 export function getItemList(){
 
-    axios.get("http://localhost:8000/api/item/itemdetail")
-    .then((response) => {return response})
-    .catch((error) => {return error});
+    return axios.get(kUrl + '/api/item/itemdetail')
 }

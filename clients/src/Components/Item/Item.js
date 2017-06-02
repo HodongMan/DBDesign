@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 class Item extends Component{
 
     render(){
@@ -7,14 +7,14 @@ class Item extends Component{
 
             <div className='col-sm-4 col-lg-4 col-md-4'>
                 <div className='thumbnail'>
-                    <img src='http://placehold.it/320x150' alt='' />
+                    <img src={this.props.image} alt='' />
                     <div className='caption'>
-                        <h4 className='pull-right'>$24.99</h4>
-                        <h4><a href='#'>First Product</a></h4>
-                        <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp</a>.</p>
+                        <h4 className='pull-right'>{this.props.price} 원</h4>
+                        <h4><a href='#'>{this.props.name}</a></h4>
+                        <p>{this.props.content}.</p>
                     </div>
                     <div className='ratings'>
-                        <p className='pull-right'>15 reviews</p>
+                        <p className='pull-right'>{this.props.stock} 개 남음</p>
                         <p>
                             <span className="glyphicon glyphicon-star"></span>
                             <span className="glyphicon glyphicon-star"></span>
@@ -28,5 +28,18 @@ class Item extends Component{
     }
 
 }
+
+/*
+Item.propTypes = {
+    id : PropTypes.string.isRequired,
+    type : PropTypes.string.isRequired,
+    name : PropTypes.string.isRequired,
+    content : PropTypes.string.isRequired,
+    price : PropTypes.string.isRequired,
+    image : PropTypes.string.isRequired,
+    item_id : PropTypes.string.isRequired,
+    stock : PropTypes.string.isRequired,
+}
+*/
 
 export default Item;
