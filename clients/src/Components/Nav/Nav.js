@@ -1,40 +1,56 @@
 import React, {Component} from 'react';
 
-
 class Nav extends Component{
 
     render(){
 
         return(
-            <nav className='navbar navbar-inverse navbar-fixed-top' role='navigation'>
-                <div className='container'>
-                    <div className='navbar-header'>
-                        <button type='button' className='navbar-toggle' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1'>
-                            <span className='sr-only'>Toggle navigation</span>
-                            <span className='icon-bar'></span>
-                            <span className='icon-bar'></span>
-                            <span className='icon-bar'></span>
-                        </button>
-                        <a className='navbar-brand' href='#'>UOS 25</a>
-                    </div>
-                    <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
-                        <ul className='nav navbar-nav'>
-                            <li>
-                                <a href='#'>About</a>
-                            </li>
-                            <li>
-                                <a href='#'>Services</a>
-                            </li>
-                            <li>
-                                <a href='#'>Contact</a>
-                            </li>
-                        </ul>
+            <div className>
+                <div className="site-branding-area">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <div className="logo">
+                                    <h1><a href="index.html"><span>UOS</span>25</a></h1>
+                                </div>
+                            </div>
+
+                            <div className="col-sm-6">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
+
+
+                <div className="mainmenu-area">
+                    <div className="container">
+                        <div className="row">
+                            <div className="navbar-header">
+                                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span className="sr-only">Toggle navigation</span>
+                                    <span className="icon-bar"></span>
+                                    <span className="icon-bar"></span>
+                                    <span className="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div className="navbar-collapse collapse">
+                                <ul className="nav navbar-nav">
+                                    <li className="active"><a href="index.html">Home</a></li>
+                                    <li><a href="shop.html">Shop page</a></li>
+                                    <li><a href="single-product.html">Single product</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="#">Category</a></li>
+                                    <li><a href="#">Others</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         );
     }
 }
-
 
 export default Nav;
