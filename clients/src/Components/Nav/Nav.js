@@ -39,7 +39,7 @@ class Nav extends Component{
                                     <li className="active"><Link to='/'>Home</Link></li>
                                     <li><Link to='/list'>List</Link></li>
                                     <li><Link to='/detail'>Detail</Link></li>
-                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><Link to='/cart'>cart</Link></li>
                                     <li><a href="checkout.html">Checkout</a></li>
                                     <li><a href="#">Category</a></li>
                                     <li><a href="#">Others</a></li>

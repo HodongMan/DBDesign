@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import ItemListContainer from './ItemListContainer';
-import {ItemAD} from '../../Components';
+import {ProductTitle} from '../../Components';
 
 
 class ItemListArticleContainer extends Component{
@@ -12,11 +12,13 @@ class ItemListArticleContainer extends Component{
 
     render(){
         return(
-            <div className='container'>
-                <div className='row'>
-                    <div className='col-md-12'>
-                        <ItemAD />
-                        <ItemListContainer />
+            <div>
+                <ProductTitle />
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-md-12'>
+                            <ItemListContainer />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import {Switch, Route} from 'react-router-dom';
 import IndexPage from './IndexPage';
 import ItemListPage from './ItemListPage';
 import ItemDetailPage from './ItemDetailPage';
+import CartPage from './CartPage';
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -18,6 +19,7 @@ const Routes = () => (
         <Route exact path='/' component={IndexPage} />
         <Route path='/list' component={ItemListPage} />
         <Route path='/detail' component={ItemDetailPage} />
+        <Route pth='/cart' component={CartPage} />
     </Switch>
 )
 
