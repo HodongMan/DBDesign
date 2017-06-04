@@ -12,7 +12,7 @@ import Item from './Item/Item';
 import ItemCategoryList from './Item/ItemCategoryList';
 import ItemAD from './Item/ItemAD';
 import ItemDetail from './ItemDetail/ItemDetail';
-import ItemIndividual from './ItemDetail/ItemIndividual';
+import ItemDetailSideMenu from './ItemDetail/ItemDetailSideMenu';
 
 export {
     Nav,
@@ -29,5 +29,5 @@ export {
     Item,
 
     ItemDetail,
-    ItemIndividual,
+    ItemDetailSideMenu,
 }

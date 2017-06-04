@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class Nav extends Component{
 
@@ -35,9 +36,9 @@ class Nav extends Component{
                             </div>
                             <div className="navbar-collapse collapse">
                                 <ul className="nav navbar-nav">
-                                    <li className="active"><a href="index.html">Home</a></li>
-                                    <li><a href="shop.html">Shop page</a></li>
-                                    <li><a href="single-product.html">Single product</a></li>
+                                    <li className="active"><Link to='/'>Home</Link></li>
+                                    <li><Link to='/list'>List</Link></li>
+                                    <li><Link to='/detail'>Detail</Link></li>
                                     <li><a href="cart.html">Cart</a></li>
                                     <li><a href="checkout.html">Checkout</a></li>
                                     <li><a href="#">Category</a></li>
