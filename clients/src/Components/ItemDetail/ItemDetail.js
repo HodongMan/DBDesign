@@ -19,30 +19,23 @@ class ItemDetail extends Component{
                             <div className="col-sm-6">
                                 <div className="product-images">
                                     <div className="product-main-img">
-                                        <img src="img/product-2.jpg" alt="" />
-                                    </div>
-
-                                    <div className="product-gallery">
-                                        <img src="img/product-thumb-1.jpg" alt="" />
-                                        <img src="img/product-thumb-2.jpg" alt="" />
-                                        <img src="img/product-thumb-3.jpg" alt="" />
-                                        <img src="img/product-thumb-4.jpg" alt="" />
+                                        <img src={this.props.image} alt="" />
                                     </div>
                                 </div>
                             </div>
 
                             <div className="col-sm-6">
                                 <div className="product-inner">
-                                    <h2 className="product-name">Sony Smart TV - 2015</h2>
+                                    <h2 className="product-name">{this.props.name}</h2>
                                     <div className="product-inner-price">
-                                        <ins>$700.00</ins> <del>$800.00</del>
+                                        <ins>{this.props.price}원</ins> <del>$800.00</del>
                                     </div>
 
                                     <form action="" className="cart">
                                         <div className="quantity">
                                             <input type="number" size="4" className="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1" />
                                         </div>
-                                        <button className="add_to_cart_button" type="submit">Add to cart</button>
+                                        <button className="add_to_cart_button" type="submit">구매하기</button>
                                     </form>
 
                                     <div className="product-inner-category">
@@ -51,21 +44,21 @@ class ItemDetail extends Component{
 
                                     <div role="tabpanel">
                                         <ul className="product-tab" role="tablist">
-                                            <li role="presentation" className="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
-                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reviews</a></li>
+                                            <li role="presentation" className="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">제품 설명</a></li>
+                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">후기</a></li>
                                         </ul>
                                         <div className="tab-content">
                                             <div role="tabpanel" className="tab-pane fade in active" id="home">
-                                                <h2>Product Description</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.</p>
-
-                                                <p>Mauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>
-                                            </div>
+                                                <h2>제품 설명</h2>
+                                                <p>
+                                                    {this.props.content}
+                                                </p>
+                                                </div>
                                             <div role="tabpanel" className="tab-pane fade" id="profile">
                                                 <h2>Reviews</h2>
                                                 <div className="submit-review">
-                                                    <p><label forHtml="name">Name</label> <input name="name" type="text" /></p>
-                                                    <p><label forHtml="email">Email</label> <input name="email" type="email" /></p>
+                                                    <p><label htmlFor="name">Name</label> <input name="name" type="text" /></p>
+                                                    <p><label htmlFor="email">Email</label> <input name="email" type="email" /></p>
                                                     <div className="rating-chooser">
                                                         <p>Your rating</p>
 
@@ -77,7 +70,7 @@ class ItemDetail extends Component{
                                                             <i className="fa fa-star"></i>
                                                         </div>
                                                     </div>
-                                                    <p><label for="review">Your review</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
+                                                    <p><label htmlFor="review">Your review</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
                                                     <p><input type="submit" value="Submit" /></p>
                                                 </div>
                                             </div>

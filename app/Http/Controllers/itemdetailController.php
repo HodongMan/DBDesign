@@ -14,6 +14,13 @@ class itemdetailController extends Controller
         return response()->json($itemdetail);
     }
 
+    public function show($id)
+    {
+        $itemdetail = itemdetail::where('item_id', '=', $id)->firstOrFail();
+
+        return response()->json($itemdetail);
+    }
+
     public function create(Request $request)
     {
         $this->validate($request, [

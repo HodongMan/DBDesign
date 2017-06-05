@@ -1,8 +1,10 @@
 import React, {Component, PropTypes} from 'react';
+import {Link} from 'react-router-dom';
+
 class Item extends Component{
 
     render(){
-
+        let linkUrl = '/detail/' + this.props.id
         return(
 
             <div className='col-sm-4 col-lg-4 col-md-4'>
@@ -10,7 +12,7 @@ class Item extends Component{
                     <img src={this.props.image} alt='' />
                     <div className='caption'>
                         <h4 className='pull-right'>{this.props.price} 원</h4>
-                        <h4><a href='#'>{this.props.name}</a></h4>
+                        <h4><Link to={linkUrl}>{this.props.name}</Link></h4>
                         <p>{this.props.content}.</p>
                     </div>
                     <div className='ratings'>

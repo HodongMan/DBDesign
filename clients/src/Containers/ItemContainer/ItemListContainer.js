@@ -15,7 +15,6 @@ class ItemListContainer extends Component{
         getItemList()
         .then((result) => {
             this.setState({itemList : result.data});
-            console.log(this.state.itemList[0].id);
         })
         .catch((error) => console.log(error));
     }
@@ -26,6 +25,7 @@ class ItemListContainer extends Component{
                 {this.state.itemList.map((item) => {
                     return(<Item
                             key={item.id}
+                            id={item.id}
                             name={item.name}
                             image={item.image}
                             price={item.price}
