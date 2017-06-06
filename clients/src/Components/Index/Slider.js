@@ -33,9 +33,9 @@ class Slider extends Component{
                                             <div className="row">
                                                 <div className="col-md-6 col-md-offset-6">
                                                     <div className="slide-content">
-                                                        <h2>We are awesome</h2>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, dolorem, excepturi. Dolore aliquam quibusdam ut quae iure vero exercitationem ratione!</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ab molestiae minus reiciendis! Pariatur ab rerum, sapiente ex nostrum laudantium.</p>
+                                                        <h2>UOS 25 할인 행사입니다</h2>
+                                                        <p>UOS 25는 항상 여러분들을 위하고 있습니다 다양한 할인 행사 <br/>지금 만나볼 수 있습니다!!</p>
+                                                        <p>손님 1 : 아니 이렇게 퍼주면 도대체 뭐남아요<br />UOS25 : 남는거 읍서.. ㅎㅎㅎ 사람 남으면 됐지 뭐</p>
                                                         <a href="" className="readmore">Learn more</a>
                                                     </div>
                                                 </div>

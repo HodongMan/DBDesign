@@ -2,7 +2,6 @@ import Nav from './Nav/Nav';
 
 import Slider from './Index/Slider';
 import Promo from './Index/Promo';
-import MainContent from './Index/MainContent';
 import Brand from './Index/Brand';
 import ProductWidget from './Index/ProductWidget';
 
@@ -15,6 +14,7 @@ import ItemCategoryList from './Item/ItemCategoryList';
 import ItemAD from './Item/ItemAD';
 import ItemDetail from './ItemDetail/ItemDetail';
 import ItemDetailSideMenu from './ItemDetail/ItemDetailSideMenu';
+import ItemSearchResult from './ItemDetail/ItemSearchResult';
 
 import Cart from './Cart/Cart';
 
@@ -24,7 +24,6 @@ export {
 
     Slider,
     Promo,
-    MainContent,
     Brand,
     ProductWidget,
 
@@ -36,6 +35,7 @@ export {
 
     ItemDetail,
     ItemDetailSideMenu,
+    ItemSearchResult,
 
     Cart,
 }

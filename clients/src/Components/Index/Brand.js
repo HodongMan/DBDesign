@@ -17,10 +17,6 @@ class Brand extends Component{
                                     <img src="img/services_logo__2.jpg" alt="" />
                                     <img src="img/services_logo__3.jpg" alt="" />
                                     <img src="img/services_logo__4.jpg" alt="" />
-                                    <img src="img/services_logo__1.jpg" alt="" />
-                                    <img src="img/services_logo__2.jpg" alt="" />
-                                    <img src="img/services_logo__3.jpg" alt="" />
-                                    <img src="img/services_logo__4.jpg" alt="" />
                                 </div>
                             </div>
                         </div>

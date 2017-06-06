@@ -1,10 +1,10 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 
-import IndexPage from './IndexPage';
 import CartPage from './CartPage';
 
 import {ItemDetailMainContainer, ItemListArticleContainer} from './Containers';
+import {IndexMainContainer} from './Containers';
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -16,7 +16,7 @@ import './style.css';
 
 const Routes = () => (
     <Switch>
-        <Route exact path='/' component={IndexPage} />
+        <Route exact path='/' component={IndexMainContainer} />
         <Route path='/list' component={ItemListArticleContainer} />
         <Route path='/detail/:id' component={ItemDetailMainContainer} />
         <Route pth='/cart' component={CartPage} />

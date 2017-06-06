@@ -32,6 +32,7 @@ Route::post('/api/item', 'itemController@create');
 /* ITEMDETAIL */
 Route::get('/api/itemdetail/', 'itemdetailController@index');
 Route::get('/api/itemdetail/{id}', 'itemdetailController@show');
+Route::get("/api/itemdetail/search/{search}", 'itemdetailController@search');
 Route::post('/api/itemdetail', 'itemdetailController@create');
 
 /* ITEMEVENT */

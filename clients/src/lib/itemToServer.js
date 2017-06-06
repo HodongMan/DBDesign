@@ -10,3 +10,8 @@ export function getItemList(){
 export function getItemDetail(id){
     return axios.get(kUrl + "/api/itemdetail/" + id);
 }
+
+
+export function getItemDetailSearchResult(search){
+    return axios.get(kUrl + "/api/itemdetail/search/" + search);
+}

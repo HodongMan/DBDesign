@@ -21,6 +21,13 @@ class itemdetailController extends Controller
         return response()->json($itemdetail);
     }
 
+    public function search($search)
+    {
+        $itemdetail = itemdetail::where('name', 'like', "%$search%")->orderBy("created_at", 'desc')->limit(3)->get();
+
+        return response()->json($itemdetail);
+    }
+
     public function create(Request $request)
     {
         $this->validate($request, [

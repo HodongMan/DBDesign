@@ -12,7 +12,7 @@ class Nav extends Component{
                         <div className="row">
                             <div className="col-sm-6">
                                 <div className="logo">
-                                    <h1><a href="index.html"><span>UOS</span>25</a></h1>
+                                    <h1><Link to='/'><span>UOS</span>25</Link></h1>
                                 </div>
                             </div>
 
@@ -36,10 +36,10 @@ class Nav extends Component{
                             </div>
                             <div className="navbar-collapse collapse">
                                 <ul className="nav navbar-nav">
-                                    <li className="active"><Link to='/'>Home</Link></li>
-                                    <li><Link to='/list'>List</Link></li>
+                                    <li className="active"><Link to='/'>홈</Link></li>
+                                    <li><Link to='/list'>상품</Link></li>
                                     <li><Link to='/detail/1'>Detail</Link></li>
-                                    <li><Link to='/cart'>cart</Link></li>
+                                    <li><Link to='/cart'>결제</Link></li>
                                     <li><a href="checkout.html">Checkout</a></li>
                                     <li><a href="#">Category</a></li>
                                     <li><a href="#">Others</a></li>

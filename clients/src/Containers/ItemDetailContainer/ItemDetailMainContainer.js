@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import { Nav, ItemDetailSideMenu, ProductTitle, Footer } from '../../Components';
+import { Nav, ProductTitle, Footer } from '../../Components';
 import ItemDetailContainer from './ItemDetailContainer';
+import ItemSideMenuContainer from './ItemSideMenuContainer';
 
 class ItemDetailMainContainer extends Component{
 
@@ -19,7 +20,7 @@ class ItemDetailMainContainer extends Component{
                 <ProductTitle />
                 <div className='container'>
                     <div className='row'>
-                        <ItemDetailSideMenu />
+                        <ItemSideMenuContainer />
                         <ItemDetailContainer
                             id={this.props.match.params.id}
                         />
