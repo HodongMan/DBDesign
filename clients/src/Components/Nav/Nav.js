@@ -39,10 +39,10 @@ class Nav extends Component{
                                     <li className="active"><Link to='/'>홈</Link></li>
                                     <li><Link to='/list'>상품</Link></li>
                                     <li><Link to='/cart'>결제</Link></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="#">Category</a></li>
-                                    <li><a href="#">Others</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="/">아무</a></li>
+                                    <li><a href="/">것도</a></li>
+                                    <li><a href="/">아직</a></li>
+                                    <li><a href="/">아님</a></li>
                                 </ul>
                             </div>
                         </div>

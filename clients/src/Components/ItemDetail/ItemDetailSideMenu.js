@@ -9,7 +9,7 @@ class ItemDetailSideMenu extends Component{
                 <div className="single-sidebar">
                     <h2 className="sidebar-title">상품 검색</h2>
                     <form action="">
-                        <input type="text" placeholder="Search products..."
+                        <input type="text" placeholder="상품 이름..."
                             onChange={
                                 (e)=>{
                                     this.props.change(e.target.value);
@@ -25,12 +25,12 @@ class ItemDetailSideMenu extends Component{
                                 }
                             }
                             />
-                        <input type="submit" value="Search" onClick={
+                        <button type="submit"onClick={
                             (e)=>{
-                                this.props.change();
+                                this.props.click();
                                 e.preventDefault();
                             }
-                        }/>
+                        }>검색</button>
                     </form>
                 </div>
         );

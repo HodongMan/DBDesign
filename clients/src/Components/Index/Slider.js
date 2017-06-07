@@ -36,7 +36,7 @@ class Slider extends Component{
                                                         <h2>UOS 25 할인 행사입니다</h2>
                                                         <p>UOS 25는 항상 여러분들을 위하고 있습니다 다양한 할인 행사 <br/>지금 만나볼 수 있습니다!!</p>
                                                         <p>손님 1 : 아니 이렇게 퍼주면 도대체 뭐남아요<br />UOS25 : 남는거 읍서.. ㅎㅎㅎ 사람 남으면 됐지 뭐</p>
-                                                        <a href="" className="readmore">Learn more</a>
+                                                        <a href="" className="readmore">더 보기</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -53,10 +53,11 @@ class Slider extends Component{
                                         <div className="container">
                                             <div className="row">
                                                 <div className="col-md-6 col-md-offset-6">
-                                                    <div className="slide-content">
-                                                        <h2>We are great</h2>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur, dolorum harum molestias tempora deserunt voluptas possimus quos eveniet, vitae voluptatem accusantium atque deleniti inventore. Enim quam placeat expedita! Quibusdam!</p>
-                                                        <a href="" className="readmore">Learn more</a>
+                                                        <div className="slide-content">
+                                                        <h2>UOS 25 할인 행사입니다</h2>
+                                                        <p>UOS 25는 항상 여러분들을 위하고 있습니다 다양한 할인 행사 <br/>지금 만나볼 수 있습니다!!</p>
+                                                        <p>손님 1 : 아니 이렇게 퍼주면 도대체 뭐남아요<br />UOS25 : 남는거 읍서.. ㅎㅎㅎ 사람 남으면 됐지 뭐</p>
+                                                        <a href="" className="readmore">더 보기</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -73,11 +74,11 @@ class Slider extends Component{
                                         <div className="container">
                                             <div className="row">
                                                 <div className="col-md-6 col-md-offset-6">
-                                                    <div className="slide-content">
-                                                        <h2>We are superb</h2>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eius?</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptates necessitatibus dicta recusandae quae amet nobis sapiente explicabo voluptatibus rerum nihil quas saepe, tempore error odio quam obcaecati suscipit sequi.</p>
-                                                        <a href="" className="readmore">Learn more</a>
+                                                        <div className="slide-content">
+                                                        <h2>UOS 25 할인 행사입니다</h2>
+                                                        <p>UOS 25는 항상 여러분들을 위하고 있습니다 다양한 할인 행사 <br/>지금 만나볼 수 있습니다!!</p>
+                                                        <p>손님 1 : 아니 이렇게 퍼주면 도대체 뭐남아요<br />UOS25 : 남는거 읍서.. ㅎㅎㅎ 사람 남으면 됐지 뭐</p>
+                                                        <a href="" className="readmore">더 보기</a>
                                                     </div>
                                                 </div>
                                             </div>

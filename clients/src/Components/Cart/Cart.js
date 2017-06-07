@@ -32,11 +32,11 @@ class Cart extends Component{
                                         </td>
 
                                         <td className="product-name">
-                                            <a href="single-product.html">Ship Your Idea</a>
+                                            <a href="single-product.html">제품 이름</a>
                                         </td>
 
                                         <td className="product-price">
-                                            <span className="amount">£15.00</span>
+                                            <span className="amount">15000 원</span>
                                         </td>
 
                                         <td className="product-quantity">
@@ -48,14 +48,14 @@ class Cart extends Component{
                                         </td>
 
                                         <td className="product-subtotal">
-                                            <span className="amount">£15.00</span>
+                                            <span className="amount">15000 원</span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="actions" colSpan="6">
                                             <div className="coupon">
-                                                <label htmlFor="coupon_code">Coupon:</label>
-                                                <input type="text" placeholder="Coupon code" value="" id="coupon_code" className="input-text" name="coupon_code" />
+                                                <label htmlFor="coupon_code"></label>
+                                                <input type="text" placeholder="쿠폰 코드" value="" id="coupon_code" className="input-text" name="coupon_code" />
                                                 <input type="submit" value="쿠폰 적용하기" name="apply_coupon" className="button" />
                                             </div>
                                             <input type="submit" value="계산 하기" name="update_cart" className="button" />
@@ -69,23 +69,23 @@ class Cart extends Component{
 
 
                         <div className="cart_totals ">
-                            <h2>Cart Totals</h2>
+                            <h2>총 금액</h2>
 
                             <table cellSpacing="0">
                                 <tbody>
                                     <tr className="cart-subtotal">
-                                        <th>Cart Subtotal</th>
-                                        <td><span className="amount">£15.00</span></td>
+                                        <th>가격</th>
+                                        <td><span className="amount">15000 원</span></td>
                                     </tr>
 
                                     <tr className="shipping">
-                                        <th>Shipping and Handling</th>
-                                        <td>Free Shipping</td>
+                                        <th>할인된 금액</th>
+                                        <td>그딴거 업슴</td>
                                     </tr>
 
                                     <tr className="order-total">
-                                        <th>Order Total</th>
-                                        <td><strong><span className="amount">£15.00</span></strong> </td>
+                                        <th>결제 금액</th>
+                                        <td><strong><span className="amount">15000 원</span></strong> </td>
                                     </tr>
                                 </tbody>
                             </table>

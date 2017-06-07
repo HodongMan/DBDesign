@@ -11,7 +11,7 @@ class Brand extends Component{
                     <div className="row">
                         <div className="col-md-12">
                             <div className="brand-wrapper">
-                                <h2 className="section-title">Brands</h2>
+                                <h2 className="section-title">브랜드</h2>
                                 <div className="brand-list">
                                     <img src="img/services_logo__1.jpg" alt="" />
                                     <img src="img/services_logo__2.jpg" alt="" />
