@@ -38,7 +38,6 @@ class Nav extends Component{
                                 <ul className="nav navbar-nav">
                                     <li className="active"><Link to='/'>홈</Link></li>
                                     <li><Link to='/list'>상품</Link></li>
-                                    <li><Link to='/detail/1'>Detail</Link></li>
                                     <li><Link to='/cart'>결제</Link></li>
                                     <li><a href="checkout.html">Checkout</a></li>
                                     <li><a href="#">Category</a></li>

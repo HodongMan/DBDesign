@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class ItemSearchResult extends Component{
 
     render(){
+        let linkUrl = '/detail/' + this.props.id;
+
         return(
             <div>
-                <h2 className="sidebar-title">상품 목록</h2>
                 <div className="thubmnail-recent">
 
-                    <h2><a href="">{this.props.name}</a></h2>
+                    <h2><a href={linkUrl}>{this.props.name}</a></h2>
                     <div className="product-sidebar-price">
-                        <ins>{this.props.price}원</ins>
+                        <ins>{this.props.price} 원</ins>
                     </div>
                 </div>
             </div>

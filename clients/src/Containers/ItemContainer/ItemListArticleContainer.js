@@ -16,7 +16,9 @@ class ItemListArticleContainer extends Component{
             <div>
                 <Nav />
                 <div>
-                    <ProductTitle />
+                    <ProductTitle
+                        title={"상품 목록"}
+                    />
                     <div className='container'>
                         <div className='row'>
                             <div className='col-md-12'>

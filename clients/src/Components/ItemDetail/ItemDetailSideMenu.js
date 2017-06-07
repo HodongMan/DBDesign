@@ -7,7 +7,7 @@ class ItemDetailSideMenu extends Component{
         return(
 
                 <div className="single-sidebar">
-                    <h2 className="sidebar-title">Search Products</h2>
+                    <h2 className="sidebar-title">상품 검색</h2>
                     <form action="">
                         <input type="text" placeholder="Search products..."
                             onChange={

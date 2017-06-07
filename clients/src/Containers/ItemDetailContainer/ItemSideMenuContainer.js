@@ -46,6 +46,7 @@ class ItemSideMenuContainer extends Component{
                     change={this.handleSearchOnChange}
                 />
                 <div className="single-sidebar">
+                    <h2 className="sidebar-title">검색 결과</h2>
                     {this.state.searchResultData.map((result) => {
                         return(<ItemSearchResult
                                 key={result.item_id}

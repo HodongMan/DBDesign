@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import { Nav, ProductTitle, Footer } from '../../Components';
-import ItemDetailContainer from './ItemDetailContainer';
-import ItemSideMenuContainer from './ItemSideMenuContainer';
+import { Nav, ProductTitle, Cart, Footer } from '../../Components';
 
-class ItemDetailMainContainer extends Component{
+import ItemSideMenuContainer from '../ItemDetailContainer/ItemSideMenuContainer';
+
+class CartMainContainer extends Component{
 
     constructor(props){
         super(props);
@@ -18,14 +18,12 @@ class ItemDetailMainContainer extends Component{
             <div>
                 <Nav />
                 <ProductTitle
-                    title={"상품 정보"}
+                    title={"결재"}
                 />
                 <div className='container'>
                     <div className='row'>
                         <ItemSideMenuContainer />
-                        <ItemDetailContainer
-                            id={this.props.match.params.id}
-                        />
+                        <Cart />
                   </div>
                 </div>
                 <Footer />
@@ -34,4 +32,4 @@ class ItemDetailMainContainer extends Component{
     }
 }
 
-export default ItemDetailMainContainer;
+export default CartMainContainer;

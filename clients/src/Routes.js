@@ -1,10 +1,9 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 
-import CartPage from './CartPage';
-
 import {ItemDetailMainContainer, ItemListArticleContainer} from './Containers';
 import {IndexMainContainer} from './Containers';
+import {CartMainContainer} from './Containers';
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -19,7 +18,7 @@ const Routes = () => (
         <Route exact path='/' component={IndexMainContainer} />
         <Route path='/list' component={ItemListArticleContainer} />
         <Route path='/detail/:id' component={ItemDetailMainContainer} />
-        <Route pth='/cart' component={CartPage} />
+        <Route pth='/cart' component={CartMainContainer} />
     </Switch>
 )
 

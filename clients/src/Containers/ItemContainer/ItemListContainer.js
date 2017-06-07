@@ -24,8 +24,8 @@ class ItemListContainer extends Component{
             <div className='row'>
                 {this.state.itemList.map((item) => {
                     return(<Item
-                            key={item.id}
-                            id={item.id}
+                            key={item.item_id}
+                            id={item.item_id}
                             name={item.name}
                             image={item.image}
                             price={item.price}

@@ -56,10 +56,9 @@ class Cart extends Component{
                                             <div className="coupon">
                                                 <label htmlFor="coupon_code">Coupon:</label>
                                                 <input type="text" placeholder="Coupon code" value="" id="coupon_code" className="input-text" name="coupon_code" />
-                                                <input type="submit" value="Apply Coupon" name="apply_coupon" className="button" />
+                                                <input type="submit" value="쿠폰 적용하기" name="apply_coupon" className="button" />
                                             </div>
-                                            <input type="submit" value="Update Cart" name="update_cart" className="button" />
-                                            <input type="submit" value="Proceed to Checkout" name="proceed" className="checkout-button button alt wc-forward" />
+                                            <input type="submit" value="계산 하기" name="update_cart" className="button" />
                                         </td>
                                     </tr>
                                 </tbody>
@@ -67,32 +66,6 @@ class Cart extends Component{
                         </form>
 
                         <div className="cart-collaterals">
-
-
-                        <div className="cross-sells">
-                            <h2>You may be interested in...</h2>
-                            <ul className="products">
-                                <li className="product">
-                                    <a href="single-product.html">
-                                        <img width="325" height="325" alt="T_4_front" className="attachment-shop_catalog wp-post-image" src="img/product-2.jpg" />
-                                        <h3>Ship Your Idea</h3>
-                                        <span className="price"><span className="amount">£20.00</span></span>
-                                    </a>
-
-                                    <a className="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="22" rel="nofollow" href="single-product.html">Select options</a>
-                                </li>
-
-                                <li className="product">
-                                    <a href="single-product.html">
-                                        <img width="325" height="325" alt="T_4_front" className="attachment-shop_catalog wp-post-image" src="img/product-4.jpg" />
-                                        <h3>Ship Your Idea</h3>
-                                        <span className="price"><span className="amount">£20.00</span></span>
-                                    </a>
-
-                                    <a className="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="22" rel="nofollow" href="single-product.html">Select options</a>
-                                </li>
-                            </ul>
-                        </div>
 
 
                         <div className="cart_totals ">
@@ -120,7 +93,6 @@ class Cart extends Component{
 
 
                         <form method="post" action="#" className="shipping_calculator">
-                            <h2><a className="shipping-calculator-button" data-toggle="collapse" href="#calcalute-shipping-wrap" aria-expanded="false" aria-controls="calcalute-shipping-wrap">Calculate Shipping</a></h2>
 
                             <section id="calcalute-shipping-wrap" className="shipping-calculator-form collapse">
 

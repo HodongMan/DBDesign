@@ -17,7 +17,7 @@ class itemController extends Controller
     public function indexJoinDetail()
     {
         $item = item::leftjoin("itemdetails", "items.id", "=", "itemdetails.item_id")
-        ->leftjoin("itemstocks", "items.id", "=", "itemstocks.item_id")->orderBy("itemdetails.created_at", 'desc')->get();
+        ->leftjoin("itemstocks", "itemdetails.item_id", "=", "itemstocks.item_id")->orderBy("itemdetails.created_at", 'desc')->get();
 
         return response()->json($item);
     }
