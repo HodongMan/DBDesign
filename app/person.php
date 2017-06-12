@@ -14,6 +14,11 @@ class person extends Model
         return $this->hasMany(order::class);
     }
 
+    public function cart()
+    {
+        return $this->hasMany(cart::class);
+    }
+
     public function persondetail()
     {
         return $this->hasOne(persondetail::class);

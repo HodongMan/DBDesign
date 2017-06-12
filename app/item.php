@@ -28,4 +28,9 @@ class item extends Model
     {
         return $this->hasMany(order::class);
     }
+
+    public function cart()
+    {
+        return $this->hasMany(cart::class);
+    }
 }

@@ -5,13 +5,12 @@ import ItemSideMenuContainer from '../ItemDetailContainer/ItemSideMenuContainer'
 import { getCartList } from '../../lib/cartToServer';
 
 
-class CartMainContainer extends Component{
+class CartItemContainer extends Component{
 
     constructor(props){
         super(props);
         this.state = {
             data : [],
-            totalCount : 0,
         }
     }
 
@@ -24,27 +23,15 @@ class CartMainContainer extends Component{
         let email = "Temp";
         getCartList(email)
         .then((result) => {
-
-            let totalCount = 0;
-            result.data.forEach((item, index) => {
-                totalCount += item.count * item.price;
-            });
-
             this.setState({
                 data : result.data,
-                totalCount,
-            });
-
+            })
         })
         .catch((error) => console.log(error));
     }
 
-    handleOnSubmit(event){
-
-        event.preventDefault();
-    }
-
     cancelToCart(){
+
 
     }
 
@@ -75,17 +62,17 @@ class CartMainContainer extends Component{
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    {this.state.data.map((item) => {
+                                                    this.state.data.map((item) => {
                                                         return( <CartItem
                                                             key={item.item_id}
                                                             id={item.item_id}
                                                             name={item.name}
                                                             image={item.image}
                                                             price={item.price}
-                                                            count={item.count}
-                                                            />
+                                                            count{item.count}
+                                                        />
                                                         );
-                                                    })}
+                                                    };
                                                     <tr>
                                                         <td className="actions" colSpan="6">
                                                             <div className="coupon">
@@ -110,7 +97,7 @@ class CartMainContainer extends Component{
                                                 <tbody>
                                                     <tr className="cart-subtotal">
                                                         <th>가격</th>
-                                                        <td><span className="amount">{this.state.totalCount} 원</span></td>
+                                                        <td><span className="amount">15000 원</span></td>
                                                     </tr>
 
                                                     <tr className="shipping">
@@ -120,7 +107,7 @@ class CartMainContainer extends Component{
 
                                                     <tr className="order-total">
                                                         <th>결제 금액</th>
-                                                        <td><strong><span className="amount">{this.state.totalCount} 원</span></strong> </td>
+                                                        <td><strong><span className="amount">15000 원</span></strong> </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -137,4 +124,4 @@ class CartMainContainer extends Component{
     }
 }
 
-export default CartMainContainer;
+export default CartItemContainer;

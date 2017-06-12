@@ -22,35 +22,6 @@ class Cart extends Component{
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="cart_item">
-                                        <td className="product-remove">
-                                            <a title="Remove this item" className="remove" href="#">×</a>
-                                        </td>
-
-                                        <td className="product-thumbnail">
-                                            <a href="single-product.html"><img width="145" height="145" alt="poster_1_up" className="shop_thumbnail" src="img/product-thumb-2.jpg" /></a>
-                                        </td>
-
-                                        <td className="product-name">
-                                            <a href="single-product.html">제품 이름</a>
-                                        </td>
-
-                                        <td className="product-price">
-                                            <span className="amount">15000 원</span>
-                                        </td>
-
-                                        <td className="product-quantity">
-                                            <div className="quantity buttons_added">
-                                                <input type="button" className="minus" value="-" />
-                                                <input type="number" size="4" className="input-text qty text" title="Qty" value="1" min="0" step="1" />
-                                                <input type="button" className="plus" value="+" />
-                                            </div>
-                                        </td>
-
-                                        <td className="product-subtotal">
-                                            <span className="amount">15000 원</span>
-                                        </td>
-                                    </tr>
                                     <tr>
                                         <td className="actions" colSpan="6">
                                             <div className="coupon">
@@ -366,3 +337,9 @@ class Cart extends Component{
 }
 
 export default Cart;
+
+/*
+    <input type="button" className="minus" value="-" />
+    <input type="number" size="4" className="input-text qty text" title="Qty" value="1" min="0" step="1" />
+    <input type="button" className="plus" value="+" />
+*/

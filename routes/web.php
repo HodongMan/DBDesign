@@ -62,3 +62,8 @@ Route::post('/api/person', 'personController@create');
 /* PERSONDETAIL */
 Route::get('/api/persondetail', 'persondetailController@index');
 Route::post('/api/persondetail', 'persondetailController@create');
+
+/* CART */
+Route::get('/api/cart', 'cartController@index');
+Route::get('/api/cart/{id}', 'cartController@show');
+Route::post('/api/cart', 'cartController@create');

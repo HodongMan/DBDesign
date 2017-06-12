@@ -17,6 +17,7 @@ import ItemDetailSideMenu from './ItemDetail/ItemDetailSideMenu';
 import ItemSearchResult from './ItemDetail/ItemSearchResult';
 
 import Cart from './Cart/Cart';
+import CartItem from './Cart/CartItem';
 
 export {
     Nav,
@@ -38,4 +39,5 @@ export {
     ItemSearchResult,
 
     Cart,
+    CartItem,
 }

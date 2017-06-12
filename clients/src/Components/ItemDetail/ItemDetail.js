@@ -33,9 +33,11 @@ class ItemDetail extends Component{
 
                                     <form action="" className="cart">
                                         <div className="quantity">
-                                            <input type="number" size="4" className="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1" />
+                                            <input type="number" size="4" className="input-text qty text" title="Qty" name="count" min="1"
+                                                onChange={this.props.handleOnChange}
+                                                required />
                                         </div>
-                                        <button className="add_to_cart_button" type="submit">구매하기</button>
+                                        <button className="add_to_cart_button" onClick={this.props.handleOnSubmit} type="submit">구매하기</button>
                                     </form>
 
                                     <div className="product-inner-category">
@@ -82,7 +84,7 @@ class ItemDetail extends Component{
                         </div>
 
 
-                        
+
                     </div>
                 </div>
 
