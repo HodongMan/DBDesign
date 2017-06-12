@@ -22,6 +22,14 @@ class itemController extends Controller
         return response()->json($item);
     }
 
+    public function indexJoinDetailOrderByStock()
+    {
+        $item = item::leftjoin("itemdetails", "items.id", "=", "itemdetails.item_id")
+        ->leftjoin("itemstocks", "itemdetails.item_id", "=", "itemstocks.item_id")->orderBy("itemstocks.stock")->get();
+
+        return response()->json($item);
+    }
+
     public function indexJoinToMany()
     {
 

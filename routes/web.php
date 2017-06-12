@@ -26,6 +26,7 @@ Route::post('/api/calculate', 'calculateController@create');
 /* ITEM */
 Route::get('/api/item', 'itemController@index');
 Route::get('/api/item/itemdetail', 'itemController@indexJoinDetail');
+Route::get('/api/item/itemdetail/stock', 'itemController@indexJoinDetailOrderByStock');
 Route::post('/api/item', 'itemController@create');
 
 

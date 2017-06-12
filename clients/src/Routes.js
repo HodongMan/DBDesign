@@ -8,7 +8,7 @@ import {CartMainContainer} from './Containers';
 
 import {AdminIndexMainContainer} from './Containers';
 import {AdminUserMainContainer} from './Containers';
-
+import {AdminItemMainContainer} from './Containers';
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -26,7 +26,8 @@ const Routes = () => (
         <Route path='/cart' component={CartMainContainer} />
 
         <Route path='/admin' component={AdminIndexMainContainer} />
-        <Route path='/user' component={AdminUserMainContainer} />
+        <Route path='/adminuser' component={AdminUserMainContainer} />
+        <Route path='/adminitem' component={AdminItemMainContainer} />
     </div>
 
 )
