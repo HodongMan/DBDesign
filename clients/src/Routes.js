@@ -1,9 +1,14 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 
+
 import {ItemDetailMainContainer, ItemListArticleContainer} from './Containers';
 import {IndexMainContainer} from './Containers';
 import {CartMainContainer} from './Containers';
+
+import {AdminIndexMainContainer} from './Containers';
+import {AdminUserMainContainer} from './Containers';
+
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -14,12 +19,16 @@ import './style.css';
 
 
 const Routes = () => (
-    <Switch>
+    <div>
         <Route exact path='/' component={IndexMainContainer} />
         <Route path='/list' component={ItemListArticleContainer} />
         <Route path='/detail/:id' component={ItemDetailMainContainer} />
-        <Route pth='/cart' component={CartMainContainer} />
-    </Switch>
+        <Route path='/cart' component={CartMainContainer} />
+
+        <Route path='/admin' component={AdminIndexMainContainer} />
+        <Route path='/user' component={AdminUserMainContainer} />
+    </div>
+
 )
 
 export default Routes;

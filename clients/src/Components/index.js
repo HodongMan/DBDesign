@@ -19,6 +19,11 @@ import ItemSearchResult from './ItemDetail/ItemSearchResult';
 import Cart from './Cart/Cart';
 import CartItem from './Cart/CartItem';
 
+import AdminIndex from './AdminIndex/AdminIndex';
+import AdminSidebar from './AdminIndex/AdminSidebar';
+
+import AdminUser from './AdminUser/AdminUser';
+
 export {
     Nav,
     Footer,
@@ -40,4 +45,8 @@ export {
 
     Cart,
     CartItem,
+
+    AdminIndex,
+    AdminSidebar,
+    AdminUser,
 }

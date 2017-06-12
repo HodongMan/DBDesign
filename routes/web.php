@@ -57,6 +57,8 @@ Route::post('/api/payment', 'paymentController@create');
 
 /* PERSON */
 Route::get('/api/person', 'personController@index');
+Route::get('/api/person/hire', 'personController@hire');
+Route::get('/api/person/fire', 'personController@fire');
 Route::post('/api/person', 'personController@create');
 
 /* PERSONDETAIL */

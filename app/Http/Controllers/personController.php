@@ -9,7 +9,21 @@ class personController extends Controller
 {
     public function index()
     {
-        $person = person::all();
+        $person = person::leftjoin("persondetails", "persons.email", "=", "persondetails.person_email")->get();
+
+        return response()->json($person);
+    }
+
+    public function hire()
+    {
+        $person = person::leftjoin("persondetails", "persons.email", "=", "persondetails.person_email")->where("persondetails.hired", "=", 1)->get();
+
+        return response()->json($person);
+    }
+
+    public function fire()
+    {
+        $person = person::leftjoin("persondetails", "persons.email", "=", "persondetails.person_email")->where("persondetails.hired", "=", 0)->get();
 
         return response()->json($person);
     }

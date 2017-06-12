@@ -4,6 +4,9 @@ import ItemDetailMainContainer from './ItemDetailContainer/ItemDetailMainContain
 import IndexMainContainer from './IndexContainer/IndexMainContainer';
 import CartMainContainer from './CartContainer/CartMainContainer';
 
+import AdminIndexMainContainer from './AdminIndexContainer/AdminIndexMainContainer';
+import AdminUserMainContainer from './AdminUserContainer/AdminUserMainContainer';
+
 export{
     ItemListContainer,
     ItemListArticleContainer,
@@ -11,4 +14,7 @@ export{
     IndexMainContainer,
 
     CartMainContainer,
+
+    AdminIndexMainContainer,
+    AdminUserMainContainer,
 }
