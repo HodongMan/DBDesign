@@ -24,6 +24,9 @@ import AdminSidebar from './AdminIndex/AdminSidebar';
 
 import AdminUser from './AdminUser/AdminUser';
 import AdminItem from './AdminItem/AdminItem';
+import AdminPayment from './AdminPayment/AdminPayment';
+
+
 export {
     Nav,
     Footer,
@@ -50,4 +53,5 @@ export {
     AdminSidebar,
     AdminUser,
     AdminItem,
+    AdminPayment,
 }

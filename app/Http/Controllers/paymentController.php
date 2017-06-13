@@ -9,7 +9,7 @@ class paymentController extends Controller
 {
     public function index()
     {
-        $payment = payment::all();
+        $payment = payment::orderBy("payments.created_at", 'desc')->get();
 
         return response()->json($payment);
     }

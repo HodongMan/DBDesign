@@ -5,7 +5,7 @@ const kUrl = 'http://localhost:8000';
 
 export function getPaymentList(){
 
-
+    return axios.get(kUrl + '/api/payment');
 }
 
 export function setPayment(data){

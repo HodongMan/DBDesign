@@ -7,6 +7,7 @@ import CartMainContainer from './CartContainer/CartMainContainer';
 import AdminIndexMainContainer from './AdminIndexContainer/AdminIndexMainContainer';
 import AdminUserMainContainer from './AdminUserContainer/AdminUserMainContainer';
 import AdminItemMainContainer from './AdminItemContainer/AdminItemMainContainer';
+import AdminPaymentMainContainer from './AdminPaymentContainer/AdminPaymentMainContainer';
 
 export{
     ItemListContainer,
@@ -19,4 +20,5 @@ export{
     AdminIndexMainContainer,
     AdminUserMainContainer,
     AdminItemMainContainer,
+    AdminPaymentMainContainer,
 }

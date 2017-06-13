@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
+
 import './Admin.css';
 
 class AdminSidebar extends Component{
@@ -15,26 +17,32 @@ class AdminSidebar extends Component{
 
                     <ul className="nav">
                         <li className="active">
-                            <a href="dashboard.html">
+                            <Link to='/admin'>
                                 <i className="ti-panel"></i>
                                 <p>메인</p>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="user.html">
+                            <Link to="/adminuser">
                                 <i className="ti-user"></i>
                                 <p>직원 정보</p>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="table.html">
+                            <Link to="/adminitem">
                                 <i className="ti-view-list-alt"></i>
                                 <p>상품 정보</p>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="typography.html">
+                            <Link to="/adminpayment">
                                 <i className="ti-text"></i>
+                                <p>판매 정보</p>
+                            </Link>
+                        </li>
+                        <li>
+                            <a href="icons.html">
+                                <i className="ti-pencil-alt2"></i>
                                 <p>매출 정보</p>
                             </a>
                         </li>
@@ -44,7 +52,7 @@ class AdminSidebar extends Component{
                                 <p>정산 정보</p>
                             </a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>

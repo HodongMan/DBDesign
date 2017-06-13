@@ -45,7 +45,7 @@ class CartMainContainer extends Component{
 
         let resultText = '';
         this.state.data.forEach((item, index) => {
-            let itemText = item.item_id + "," + item.count + ";";
+            let itemText = item.name + "," + item.count + ";";
             resultText += itemText;
         })
 

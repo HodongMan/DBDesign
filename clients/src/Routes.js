@@ -9,10 +9,8 @@ import {CartMainContainer} from './Containers';
 import {AdminIndexMainContainer} from './Containers';
 import {AdminUserMainContainer} from './Containers';
 import {AdminItemMainContainer} from './Containers';
+import {AdminPaymentMainContainer} from './Containers';
 
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
 
 import './App.css';
 import './style.css';
@@ -28,6 +26,7 @@ const Routes = () => (
         <Route path='/admin' component={AdminIndexMainContainer} />
         <Route path='/adminuser' component={AdminUserMainContainer} />
         <Route path='/adminitem' component={AdminItemMainContainer} />
+        <Route path='/adminpayment' component={AdminPaymentMainContainer} />
     </div>
 
 )
