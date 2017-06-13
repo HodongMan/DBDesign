@@ -70,3 +70,4 @@ Route::post('/api/persondetail', 'persondetailController@create');
 Route::get('/api/cart', 'cartController@index');
 Route::get('/api/cart/{id}', 'cartController@show');
 Route::post('/api/cart', 'cartController@create');
+Route::delete('/api/cart/{id}', 'cartController@destroy');

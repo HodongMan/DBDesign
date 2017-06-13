@@ -10,3 +10,8 @@ export function addToCart(item){
 export function getCartList(email){
     return axios.get(kUrl + '/api/cart/' + email);
 }
+
+
+export function deleteCartList(email){
+    return axios.delete(kUrl + '/api/cart/' + email);
+}

@@ -48,6 +48,7 @@ class cartController extends Controller
 
     public function destroy($id)
     {
-
+        $cart = cart::where('person_email', '=', $id)->delete();
+        return response()->json($cart);
     }
 }

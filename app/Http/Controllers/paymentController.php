@@ -27,11 +27,11 @@ class paymentController extends Controller
 
 
         $payment = new payment([
-            'price' => $request->input('type'),
-            'content' => $request->input('status'),
-            'payment' => $request->input('item_id'),
-            'chance' => $request->input('person_email'),
-            'date' => $request->input('person_email'),
+            'price' => $request->input('price'),
+            'content' => $request->input('content'),
+            'payment' => $request->input('payment'),
+            'chance' => $request->input('chance'),
+            'date' => $request->input('date'),
             'person_email' => $request->input('person_email')
         ]);
 

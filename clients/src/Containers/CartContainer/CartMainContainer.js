@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import { Nav, ProductTitle, CartItem, Footer } from '../../Components';
 import ItemSideMenuContainer from '../ItemDetailContainer/ItemSideMenuContainer';
 
-import { getCartList } from '../../lib/cartToServer';
-
+import { getCartList, deleteCartList } from '../../lib/cartToServer';
+import { setPayment } from '../../lib/paymentToServer';
 
 class CartMainContainer extends Component{
 
@@ -13,6 +13,8 @@ class CartMainContainer extends Component{
             data : [],
             totalCount : 0,
         }
+
+        this.handleOnSubmit = this.handleOnSubmit.bind(this);
     }
 
     componentDidMount(){
@@ -40,6 +42,34 @@ class CartMainContainer extends Component{
     }
 
     handleOnSubmit(event){
+
+        let resultText = '';
+        this.state.data.forEach((item, index) => {
+            let itemText = item.item_id + "," + item.count + ";";
+            resultText += itemText;
+        })
+
+        let saveData = {
+            price : this.state.totalCount,
+            payment : this.state.totalCount,
+            content : resultText,
+            chance : "카드",
+            date : "1992-06-13 10:00:00",
+            person_email : "Temp",
+        };
+
+
+        setPayment(saveData)
+        .then((result) => {
+            deleteCartList("Temp")
+            .then((result) => {
+                this.setState({
+                    data : [],
+                });
+            })
+            .catch((error) => console.log(error));
+        })
+        .catch((error) => console.log(error));
 
         event.preventDefault();
     }
@@ -93,7 +123,7 @@ class CartMainContainer extends Component{
                                                                 <input type="text" placeholder="쿠폰 코드" value="" id="coupon_code" className="input-text" name="coupon_code" />
                                                                 <input type="submit" value="쿠폰 적용하기" name="apply_coupon" className="button" />
                                                             </div>
-                                                            <input type="submit" value="계산 하기" name="update_cart" className="button" />
+                                                            <input type="submit" value="계산 하기" name="update_cart" className="button" onClick={this.handleOnSubmit}/>
                                                         </td>
                                                     </tr>
                                                 </tbody>
