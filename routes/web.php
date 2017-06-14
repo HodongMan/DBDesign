@@ -71,6 +71,8 @@ Route::post('/api/person', 'personController@create');
 Route::get('/api/persondetail', 'persondetailController@index');
 Route::get('/api/persondetail/count', 'persondetailController@count');
 Route::post('/api/persondetail', 'persondetailController@create');
+Route::put('/api/persondetail/hire/{id}', 'persondetailController@makeHire');
+Route::put('/api/persondetail/fire/{id}', 'persondetailController@makeFire');
 
 /* CART */
 Route::get('/api/cart', 'cartController@index');

@@ -20,6 +20,16 @@ class persondetailController extends Controller
         return response()->json($persondetail);
     }
 
+    public function makeHire($id){
+        $persondetail = persondetail::where("persondetails.person_email", "=", $id)->update(["hired" => 1]);
+        return response()->json($persondetail);
+    }
+
+    public function makeFire($id){
+        $persondetail = persondetail::where("persondetails.person_email", "=", $id)->update(["hired" => 0]);
+        return response()->json($persondetail);
+    }
+
     public function create(Request $request)
     {
         $this->validate($request, [

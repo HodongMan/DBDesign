@@ -22,3 +22,14 @@ export function getPersonFireList(){
 
     return axios.get(kUrl + "/api/person/fire");
 }
+
+
+export function makePersonHire(email){
+
+    return axios.put(kUrl + "/api/persondetail/hire/" + email)
+}
+
+export function makePersonFire(email){
+
+    return axios.put(kUrl + "/api/persondetail/hire/" + email)
+}
