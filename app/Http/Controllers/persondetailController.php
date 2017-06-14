@@ -14,6 +14,12 @@ class persondetailController extends Controller
         return response()->json($persondetail);
     }
 
+    public function count()
+    {
+        $persondetail = persondetail::where("persondetails.hired", "=", 1)->count();
+        return response()->json($persondetail);
+    }
+
     public function create(Request $request)
     {
         $this->validate($request, [

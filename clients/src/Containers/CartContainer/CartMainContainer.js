@@ -4,6 +4,7 @@ import ItemSideMenuContainer from '../ItemDetailContainer/ItemSideMenuContainer'
 
 import { getCartList, deleteCartList } from '../../lib/cartToServer';
 import { setPayment } from '../../lib/paymentToServer';
+import { addToBalance } from '../../lib/balanceToServer';
 
 class CartMainContainer extends Component{
 
@@ -65,7 +66,14 @@ class CartMainContainer extends Component{
             .then((result) => {
                 this.setState({
                     data : [],
+                    totalCount : 0,
                 });
+                addToBalance({
+                    type : saveData.chance,
+                    money : saveData.payment
+                }).
+                then((result) => console.log(result))
+                .catch((error) => console.log(error));
             })
             .catch((error) => console.log(error));
         })

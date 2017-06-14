@@ -33,6 +33,19 @@ class balanceController extends Controller
         return response()->json($balance);
     }
 
+    public function count(){
+
+        $balance = balance::count();
+        return response()->json($balance);
+    }
+
+    public function money(){
+
+        $balance = balance::sum("money");
+
+        return response()->json($balance);
+    }
+
     public function store()
     {
 

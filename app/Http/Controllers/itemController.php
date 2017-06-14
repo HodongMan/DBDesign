@@ -35,6 +35,13 @@ class itemController extends Controller
 
     }
 
+    public function count(){
+
+        $item = item::distinct("type")->count();
+
+        return response()->json($item);
+    }
+
     public function create(Request $request)
     {
         $this->validate($request, [

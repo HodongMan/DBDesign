@@ -68,8 +68,8 @@ class AdminIndex extends Component{
                                                 </div>
                                                 <div className="col-xs-7">
                                                     <div className="numbers">
-                                                        <p>Capacity</p>
-                                                        105GB
+                                                        <p>거래횟수</p>
+                                                        {this.props.count}
                                                     </div>
                                                 </div>
                                             </div>
@@ -93,8 +93,8 @@ class AdminIndex extends Component{
                                                 </div>
                                                 <div className="col-xs-7">
                                                     <div className="numbers">
-                                                        <p>Revenue</p>
-                                                        $1,345
+                                                        <p>현재 매출</p>
+                                                        {this.props.money}
                                                     </div>
                                                 </div>
                                             </div>
@@ -118,8 +118,8 @@ class AdminIndex extends Component{
                                                 </div>
                                                 <div className="col-xs-7">
                                                     <div className="numbers">
-                                                        <p>Errors</p>
-                                                        23
+                                                        <p>직원 수</p>
+                                                        {this.props.personcount}
                                                     </div>
                                                 </div>
                                             </div>
@@ -143,8 +143,8 @@ class AdminIndex extends Component{
                                                 </div>
                                                 <div className="col-xs-7">
                                                     <div className="numbers">
-                                                        <p>Followers</p>
-                                                        +45
+                                                        <p>제품 종류</p>
+                                                        {this.props.itemcount}
                                                     </div>
                                                 </div>
                                             </div>

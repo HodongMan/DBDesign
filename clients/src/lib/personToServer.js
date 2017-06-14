@@ -8,6 +8,10 @@ export function getPersonList(){
     return axios.get(kUrl + "/api/person");
 }
 
+export function getPersonCount(){
+    return axios.get(kUrl + "/api/persondetail/count");
+}
+
 
 export function getPersonHireList(){
 

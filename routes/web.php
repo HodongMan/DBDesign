@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 /* BALANCE */
 Route::get('/api/balance', 'balanceController@index');
+Route::get('/api/balance/count', 'balanceController@count');
+Route::get('/api/balance/money', 'balanceController@money');
 Route::post('/api/balance', 'balanceController@create');
 
 /* CALCULATE */
@@ -25,8 +27,11 @@ Route::post('/api/calculate', 'calculateController@create');
 
 /* ITEM */
 Route::get('/api/item', 'itemController@index');
+Route::get('/api/item/count', 'itemController@count');
+
 Route::get('/api/item/itemdetail', 'itemController@indexJoinDetail');
 Route::get('/api/item/itemdetail/stock', 'itemController@indexJoinDetailOrderByStock');
+
 Route::post('/api/item', 'itemController@create');
 
 
@@ -64,6 +69,7 @@ Route::post('/api/person', 'personController@create');
 
 /* PERSONDETAIL */
 Route::get('/api/persondetail', 'persondetailController@index');
+Route::get('/api/persondetail/count', 'persondetailController@count');
 Route::post('/api/persondetail', 'persondetailController@create');
 
 /* CART */

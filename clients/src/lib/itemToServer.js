@@ -7,6 +7,12 @@ export function getItemList(){
     return axios.get(kUrl + '/api/item/itemdetail');
 }
 
+export function getItemCount(){
+
+    return axios.get(kUrl + "/api/item/count");
+}
+
+
 export function getItemListOrderByStock(){
 
     return axios.get(kUrl + '/api/item/itemdetail/stock');
