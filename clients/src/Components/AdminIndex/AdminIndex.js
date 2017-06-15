@@ -158,78 +158,7 @@ class AdminIndex extends Component{
                                     </div>
                                 </div>
                             </div>
-                            <div className="row">
-
-                                <div className="col-md-12">
-                                    <div className="card">
-                                        <div className="header">
-                                            <h4 className="title">Users Behavior</h4>
-                                            <p className="category">24 Hours performance</p>
-                                        </div>
-                                        <div className="content">
-                                            <div id="chartHours" className="ct-chart"></div>
-                                            <div className="footer">
-                                                <div className="chart-legend">
-                                                    <i className="fa fa-circle text-info"></i> Open
-                                                    <i className="fa fa-circle text-danger"></i> Click
-                                                    <i className="fa fa-circle text-warning"></i> Click Second Time
-                                                </div>
-                                                <hr />
-                                                <div className="stats">
-                                                    <i className="ti-reload"></i> Updated 3 minutes ago
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-6">
-                                    <div className="card">
-                                        <div className="header">
-                                            <h4 className="title">Email Statistics</h4>
-                                            <p className="category">Last Campaign Performance</p>
-                                        </div>
-                                        <div className="content">
-                                            <div id="chartPreferences" className="ct-chart ct-perfect-fourth"></div>
-
-                                            <div className="footer">
-                                                <div className="chart-legend">
-                                                    <i className="fa fa-circle text-info"></i> Open
-                                                    <i className="fa fa-circle text-danger"></i> Bounce
-                                                    <i className="fa fa-circle text-warning"></i> Unsubscribe
-                                                </div>
-                                                <hr />
-                                                <div className="stats">
-                                                    <i className="ti-timer"></i> Campaign sent 2 days ago
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="card ">
-                                        <div className="header">
-                                            <h4 className="title">2015 Sales</h4>
-                                            <p className="category">All products including Taxes</p>
-                                        </div>
-                                        <div className="content">
-                                            <div id="chartActivity" className="ct-chart"></div>
-
-                                            <div className="footer">
-                                                <div className="chart-legend">
-                                                    <i className="fa fa-circle text-info"></i> Tesla Model S
-                                                    <i className="fa fa-circle text-warning"></i> BMW 5 Series
-                                                </div>
-                                                <hr />
-                                                <div className="stats">
-                                                    <i className="ti-check"></i> Data information certified
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
 

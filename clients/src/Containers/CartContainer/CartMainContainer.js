@@ -55,7 +55,7 @@ class CartMainContainer extends Component{
             payment : this.state.totalCount,
             content : resultText,
             chance : "카드",
-            date : "1992-06-13 10:00:00",
+            date : "2017-06-14 14:02:58",
             person_email : "Temp",
         };
 
